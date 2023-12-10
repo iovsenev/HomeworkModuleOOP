@@ -24,7 +24,7 @@ namespace HomeworkModuleOOP
             Creator.PrintTextWithColor("\n===== Ваш Заказ: =====\n", ConsoleColor.Blue);
             Creator.PrintTextWithColor(order.ToString(), ConsoleColor.Magenta);
         }
-
+        //добавляет товары в корзину
         static void AddProductInCart()
         {
             Creator.PrintTextWithColor("Какой товар бы вы хотели добавить в корзину?\n");
@@ -49,8 +49,8 @@ namespace HomeworkModuleOOP
                 else Creator.PrintTextWithColor("Не верный ввод\n", ConsoleColor.Red);
             }
         }
-
-        private static Delivery GetDelivery()
+        // выбор доставки
+        static Delivery GetDelivery()
         {
             Delivery delivery = null;
             while (true)
@@ -78,7 +78,7 @@ namespace HomeworkModuleOOP
             return delivery;
         }
 
-        private static Delivery ChoisePointDelivery()
+        static Delivery ChoisePointDelivery()
         {
             Creator.PrintTextWithColor("\n===== Вот наши пункты выдачи ======\n", ConsoleColor.Blue);
             Creator.PrintTextWithColor(deliveryToPoint.ToString(), ConsoleColor.Yellow);
@@ -101,7 +101,7 @@ namespace HomeworkModuleOOP
             }
         }
 
-        private static Delivery ChoiseShopDelivery()
+        static Delivery ChoiseShopDelivery()
         {
             Creator.PrintTextWithColor("\n===== Вот наши магазины ======\n", ConsoleColor.Blue);
             Creator.PrintTextWithColor(deliveryToShop.ToString(), ConsoleColor.Yellow);
@@ -142,7 +142,7 @@ namespace HomeworkModuleOOP
 
         }
 
-        private static int CheckNomeberEnter()
+        static int CheckNomeberEnter()
         {
             while (true)
             {

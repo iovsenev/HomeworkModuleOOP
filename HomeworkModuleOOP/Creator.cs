@@ -24,7 +24,7 @@ namespace HomeworkModuleOOP
             PrintTextWithColor($"\n====== Ваши данные: ======\n", ConsoleColor.Yellow);
             PrintTextWithColor($"{user.ToString()}\n", ConsoleColor.Yellow);
         }
-        
+        //формирует какой-то список доставок
         public static void CreateDeliveryList(DeliveryList<PointDelivery> points, DeliveryList<ShopDelivery> shops)
         {
 
@@ -46,7 +46,7 @@ namespace HomeworkModuleOOP
                 }
             }
         }
-
+        // формруеит список товаров
         public static void CreateProductOnSaleList(ProductsOnSale<Product> products)
         {
             int count = 10;
