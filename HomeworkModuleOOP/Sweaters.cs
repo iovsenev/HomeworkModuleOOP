@@ -8,10 +8,10 @@ namespace HomeworkModuleOOP
 {
     public class Sweaters : Product
     {
-        public Sweaters(string name, int id, string description)
+        public Sweaters(string name, double price, string description)
         {
             _name = name;
-            _id = id;
+            _price = price;
             _description = description;
         }
     }

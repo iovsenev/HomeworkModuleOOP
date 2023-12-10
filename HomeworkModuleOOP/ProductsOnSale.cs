@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeworkModuleOOP
 {
-    internal class ProductsOnSale<TProduct> : Lists<TProduct> where TProduct : Product
+    public class ProductsOnSale<TProduct> : Lists<TProduct> where TProduct : Product
     {
-        
     }
 }

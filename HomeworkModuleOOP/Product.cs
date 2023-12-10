@@ -9,15 +9,15 @@ namespace HomeworkModuleOOP
     public abstract class Product
     {
         protected string _name;
-        protected int _id;
-        public int Id
+        protected double _price;
+        public double Price
         {
-            get { return _id; }
+            get { return _price; }
             set
             {
                 if (value > 0)
                 {
-                    _id = value;
+                    _price = value;
                 }
                 else
                 {
@@ -45,7 +45,7 @@ namespace HomeworkModuleOOP
 
         public override string ToString()
         {
-            return $"Товар: {_name} c номером: {_id}";
+            return $"Товар: {_name} цена: {_price}";
         }
     }
 }

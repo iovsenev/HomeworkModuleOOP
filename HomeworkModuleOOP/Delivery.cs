@@ -9,19 +9,8 @@ namespace HomeworkModuleOOP
     public abstract class Delivery
     {
         protected string _city;
-        protected string _country;
         protected string _street;
         protected int _houseNumber;
-        public string Country
-        {
-            get { return _country; }
-            set
-            {
-                if (value != "") _country = value;
-                else throw new ArgumentException("invalid enter");
-            }
-
-        }
         
         public string City
         {
@@ -57,7 +46,7 @@ namespace HomeworkModuleOOP
 
         public override string ToString()
         {
-            return $"{_city}, {_city}, {_street}, {_houseNumber}";
+            return $"{_city}, {_street}, {_houseNumber}";
         }
     }
 }

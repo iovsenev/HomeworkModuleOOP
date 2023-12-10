@@ -10,10 +10,10 @@ namespace HomeworkModuleOOP
     {
         
         public Shoes(string name) : this(name, 0, "нет описания") { }
-        public Shoes(string name, int id, string description)
+        public Shoes(string name, double price, string description)
         {
             _name = name;
-            _id = id;
+            _price = price;
             _description = description;
         }
     }

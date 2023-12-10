@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace HomeworkModuleOOP
 {
-    internal abstract class Lists<T>
+    public abstract class Lists<T>
     {
-        private List<T> _list = new List<T>();
+        protected List<T> _list = new List<T>();
+        public int Count { get { return _list.Count; } }
+        public List<T> List { get { return _list; } }
 
         public void Add(T obj)
         {
